@@ -2,13 +2,11 @@
 function getNumber(num) {
     var output = document.getElementById("output-value");
     output.innerText += num;
-    
 }
 
 // get result
-function getResult(num) {
+function getResult() {
     var output = document.getElementById("output-value");
-    output.innerText += num;
     var result = document.getElementById("result-value");
     result.innerText = eval(output.innerText);
 }
