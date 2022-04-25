@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/6ee5a92e67.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="output">
+                <p id="output-value"></p>
+            </div>
+            <div class="result">
+                <p id="result-value">0</p>
+            </div>
+        </div>
+        <div class="input">
+            <button type="button" class="operator" id="C" onclick="clearRessult()">C</button>
+            <button type="button" class="operator" id="DEL" onclick="deleteChar()"><i class="fa-solid fa-delete-left"></i></button>
+            <button type="button" class="operator" onclick="getNumber('%')">%</button>
+            <button type="button" class="operator" onclick="getNumber('/')">&#247;</button>
+            <button type="button" class="number" onclick="getNumber('7')">7</button>
+            <button type="button" class="number" onclick="getNumber('8')">8</button>
+            <button type="button" class="number" onclick="getNumber('9')">9</button>
+            <button type="button" class="operator" onclick="getNumber('*')">x</button>
+            <button type="button" class="number" onclick="getNumber('4')">4</button>
+            <button type="button" class="number" onclick="getNumber('5')">5</button>
+            <button type="button" class="number" onclick="getNumber('6')">6</button>
+            <button type="button" class="operator" onclick="getNumber('-')">&#150;</button>
+            <button type="button" class="number" onclick="getNumber('1')">1</button>
+            <button type="button" class="number" onclick="getNumber('2')">2</button>
+            <button type="button" class="number" onclick="getNumber('3')">3</button>
+            <button type="button" class="operator" onclick="getNumber('+')">+</button>
+            <button type="button" class="number" onclick="getNumber('0')">0</button>
+            <button type="button" class="number" onclick="getNumber('00')">00</button>
+            <button type="button" class="number" onclick="getNumber('.')">.</button>
+            <button type="button" class="operator" onclick="getResult()">=</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
